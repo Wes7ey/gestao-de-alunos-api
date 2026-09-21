@@ -1,0 +1,29 @@
+{
+  "adminLoginScenarios": [
+    {
+      "name": "admin com credenciais válidas",
+      "credentials": { "email": "admin@escola.com", "senha": "admin123" },
+      "expectedStatus": 200
+    },
+    {
+      "name": "admin com senha inválida",
+      "credentials": { "email": "admin@escola.com", "senha": "senha-incorreta" },
+      "expectedStatus": 401
+    }
+  ],
+  "studentRegistration": {
+    "nome": "Maria da Silva",
+    "email": "maria.silva@example.com",
+    "matricula": "2025001",
+    "senha": "123456"
+  },
+  "disciplina": {
+    "nome": "Banco de Dados",
+    "codigo": "BD301",
+    "cargaHoraria": 40
+  },
+  "trabalho": {
+    "titulo": "Modelo de Banco de Dados",
+    "descricao": "Entrega de um modelo relacional e regras de normalização."
+  }
+}
